@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+</head>
+
+<center>
+<body>
+
+    <div>
+         <h1> Personal Budget Tracker</h1>
+    </div>
+
+    <div>
+        <p>
+            this personal budget tracker will help you keep track of your expenses and income.
+        </p>
+    </div>
+
+    <div>
+        <h2> Add Transactions</h2>
+    </div>
+
+    <form action="budget.php" method="post">
+        <div>
+        <label for="type"> Transaction-Type</label>
+        <select name="type" id="type" required>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+         </div>
+
+        <div>
+        <label for="transaction">Category</label>
+        <input type="text" name="transaction"  placeholder= "e.g Food.Rent" transaction" required>
+        <br>
+        </div>
+        <div>
+        <label for="amount">Amount</label>
+        <input type="number" name="amount"  placeholder=" e.g 50.00" "amount" required>
+        </div>
+          <div>
+        <button type="submit">Add Transaction</button>
+        </form>
+    </div>
+
+
+     <div style="margin-top: 40px;">
+        <table border="2">
+            <tr >
+                <th>Date</th>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+               <td>1/1/2025</td>
+                <td>Income</td>
+                <td>food</td>
+                <td>grocery</td>
+                <td>$100.00</td>
+               </tr>
+
+               <tr>
+                <td>2/1/2025</td>
+                 <td>Income</td>
+                 <td>food</td>
+                 <td>grocery</td>
+                 <td>$100.00</td>
+                </tr>
+
+
+                <tr>
+                    <td>3/1/2025</td>
+                     <td>Expense</td>
+                     <td>rent</td>
+                     <td>Salary</td>
+                     <td>$500.00</td>
+                </tr>
+
+                <tr>
+                    <td>4/1/2025</td>
+                     <td>Expense</td>
+                     <td>rent</td>
+                     <td>Salary</td>
+                     <td>$500.00</td>
+                    </tr>
+                    <tr>
+                        <td>5/1/2025</td>
+                         <td>Income</td>
+                         <td>vechile</td>
+                         <td>KTM-300</td>
+                         <td>$78000.00</td>
+                    </tr>
+        </table>
+        </div>
+        
+        <div>
+        <h3>Total Balance</h3>
+           <p>$79200</p>
+           </div>
+        </center>
+    
+</body>
+</html>
