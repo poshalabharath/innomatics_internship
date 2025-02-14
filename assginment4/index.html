@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="internal.css">
+</head>
+<body>
+    <nav>
+        <h1>Shopping Cart</h1>
+        <ul>
+            <li><a href="#">Mobiles</a></li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Devices</a></li>
+        </ul>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="products">
+            <div class="product" data-name="Mobile" data-price="299">
+                <h3>Mobile</h3>
+                <p>Price: $299</p>
+                <button onclick="addToCart('Mobile', 299)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Laptop" data-price="899">
+                <h3>Laptop</h3>
+                <p>Price: $899</p>
+                <button onclick="addToCart('Laptop', 899)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Sofa" data-price="499">
+                <h3>Sofa</h3>
+                <p>Price: $499</p>
+                <button onclick="addToCart('Sofa', 499)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="TV" data-price="699">
+                <h3>TV</h3>
+                <p>Price: $699</p>
+                <button onclick="addToCart('TV', 699)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Smartwatch" data-price="199">
+                <h3>Smartwatch</h3>
+                <p>Price: $199</p>
+                <button onclick="addToCart('Smartwatch', 199)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div id="cart" class="cart-panel">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="clearCart()">Empty Cart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
